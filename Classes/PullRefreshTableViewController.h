@@ -40,6 +40,8 @@
     NSString *textPull;
     NSString *textRelease;
     NSString *textLoading;
+    
+    float refreshHeaderHeight;
 }
 
 @property (nonatomic, retain) UIView *refreshHeaderView;
@@ -50,6 +52,9 @@
 @property (nonatomic, copy) NSString *textRelease;
 @property (nonatomic, copy) NSString *textLoading;
 
+@property (nonatomic) float refreshHeaderHeight;
+
+- (void)setup;
 - (void)setupStrings;
 - (void)addPullToRefreshHeader;
 - (void)startLoading;
